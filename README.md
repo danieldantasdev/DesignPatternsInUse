@@ -12,6 +12,10 @@ In software development, design patterns serve a similar purpose—**they provid
 
 > **Software design pattern** - A general, reusable solution to a commonly occurring problem within a given context in software design. It is a description or template for how to solve a problem that can be used in many different situations.
 
+## Give a Star! :star:
+
+If you like or are using this project to learn or start your solution, please give it a star. Thanks!
+
 ## Design Pattern Types
 
 Design patterns can be separated into three main categories:
@@ -261,3 +265,17 @@ Here are some more resources if you want to dig deeper into the world of design 
 - **[Refactoring.Guru](https://refactoring.guru/)** website.
 
 - **[Source Making](https://sourcemaking.com/design-patterns-and-tips)** website.
+
+## Wrap Up
+
+If you think the repository can be improved, please open a PR with any updates and submit any issues. Also, I will continue to improve this, so you should star this repository, too.
+
+## Contribution
+
+- Open a pull request with improvements
+- Discuss ideas in issues
+- Spread the word
+
+## License
+
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
