@@ -10,7 +10,7 @@ Seeing the potential of Alexander's concepts in software development, the GoF ad
 
 In software development, design patterns serve a similar purpose—**they provide templated solutions to recurring problems**, ensuring that you don't have to reinvent the wheel each time you encounter a familiar issue.
 
-> **Software design pattern** - A general, reusable solution to a commonly occurring problem within a given context in software design. It is a description or template for how to solve a problem that can be used in many different situations.
+> **Software design pattern** - Is a common solution to common problem that have been observed in practice. 
 
 ## Give a Star! :star:
 
@@ -83,6 +83,12 @@ But we want to make our codebase as simple as possible, so Design patterns are n
 ![Design Patterns Trap](assets/DesignPatternsTrap.jpg)
 
 Image credits (@flaviocopes on Twitter)
+
+In the latest [O'Reilly Technology Trends for 2024](https://www.oreilly.com/radar/technology-trends-for-2024/) we something more even more problematic. Managers are asking developers how many patterns they used. This is an open door to over-engineering.
+
+![Patterns Managers](assets/PatternsManagers.png)
+
+Yet, understanding design patterns keeps you from reinventing wheels.
 
 ---
 
