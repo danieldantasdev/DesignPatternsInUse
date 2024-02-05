@@ -272,6 +272,10 @@ To select a pattern, we must first go through the problem identification, as sho
 
 ![Select Pattern](assets/SelectPattern.png)
 
+Here is the summary of the pattern selection:
+
+![Select Pattern Summary](assets/SelectPatternSummary.png)
+
 > Design patterns are not the only kind of patterns we have. To learn more about other types of patterns, [check here](https://newsletter.techworld-with-milan.com/i/125894632/architecture-styles-patterns-and-design-patterns).
 
 ## BONUS: Design Patterns Cheat Sheet
