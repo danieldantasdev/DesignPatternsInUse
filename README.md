@@ -104,6 +104,8 @@ Every pattern has an **[implementation in C# language](src)**.
 
 **Remark about usage**: The Singleton pattern is regarded as **an anti-pattern**; hence, using them excessively is advised. Why? Using it, we tend to make procedural code with global variables.
 
+**UML diagram of Singleton pattern:**
+
 ![Singleton](assets/Singleton.png)
 
 **[An implementation of the Singleton pattern in C#.](src/Singleton)**
@@ -116,6 +118,8 @@ Every pattern has an **[implementation in C# language](src)**.
 
 **Real-world example**: Think of a pizza joint with a "Pizza Factory" instead of chefs. Customers order "cheese" or "pepperoni," not knowing how it's made. Based on the order, this factory tells specialized "CheesePizza" or "PepperoniPizza" builders to get cookin'. Each builder adds signature toppings, keeping the creation logic separate but the ordering process smooth.
 
+**UML diagram of Factory method pattern:**
+
 ![Factory Method](assets/FactoryMethod.png)
 
 **[An implementation of the Factory Method pattern in C#.](src/FactoryMethod)**
@@ -126,11 +130,13 @@ Every pattern has an **[implementation in C# language](src)**.
 
 **Real-world example**: If we hire an architect to design our dream home, we don't need to know every construction detail. We need to tell the architect our preferences (number of rooms, style, materials), and they create a blueprint with those specifications. The architect acts as the "builder pattern," guiding us through the creation process with clear steps (foundation, walls, roof), ensuring correct order, and handling complex details. You make choices (fireplace or no fireplace?), and the builder incorporates them, constructing the house piece by piece until it's complete. 
 
+**UML diagram of Builder pattern:**
+
 ![Builder](assets/Builder.png)
 
 **[An implementation of the Builder pattern in C#.](src/Builder)**
 
-Other exciting design patterns from this group are:
+Other **exciting design patterns from this group** are:
 
 * **Abstract Factory**: Create families of related objects. For example, I build parsers for different file formats (e.g., JSON, XML, CSV). Check the **[implementation in C#](src/AbstractFactory)**.
 
@@ -146,6 +152,8 @@ Other exciting design patterns from this group are:
 
 **Real-world example**: Allows you to use your devices in different countries by adapting to the local power outlet (adapter mediates communication between incompatible systems).
 
+**UML diagram of Adapter pattern:**
+
 ![Adapter](assets/Adapter.png)
 
 **[An implementation of the Adapter pattern in C#.](src/Adapter)**
@@ -155,6 +163,8 @@ Other exciting design patterns from this group are:
 **Usage**: Represent part-whole hierarchies. For example, graphic objects in a drawing application can be grouped and treated uniformly.
 
 **Real-world example**: In the library, books are organized on shelves, but each shelf can further hold categories (fiction, history). These categories might even contain subcategories (romance, mystery). Each shelf acts as a composite, keeping both individual books (leaf nodes) and other categories (composite nodes).
+
+**UML diagram of Composite pattern:**
 
 ![Composite](assets/Composite.png)
 
@@ -166,6 +176,8 @@ Other exciting design patterns from this group are:
 
 **Real-world example**: Let’s assume you’re a CEO with a personal assistant who acts as a "proxy," handling requests and shielding you from unnecessary distractions. The assistant assesses each request, prioritizing the important ones, filtering out spam, and preparing relevant info. Only the filtered essentials reach the CEO, who focuses on big decisions, while the assistant handles the rest. 
 
+**UML diagram of Proxy pattern:**
+
 ![Proxy](assets/Proxy.png)
 
 **[An implementation of the Proxy pattern in C#.](src/Proxy)**
@@ -176,11 +188,17 @@ Other exciting design patterns from this group are:
 
 **Real-world example**: If we want to make a coffee, we would start with plain coffee (the core object). Then, "decorate" it with cream (adds richness), sugar (sweetness), and cinnamon (extra flavor), each a "decorator" enhancing the base coffee without altering it. You can even combine them (multiple decorators) for unique creations like a creamy, sweet cinnamon latte!
 
+**UML diagram of Decorator pattern:**
+
 ![Decorator](assets/Decorator.png)
 
 **[An implementation of the Decorator pattern in C#.](src/Decorator)**
 
-> Another interesting design pattern from this group is the **Bridge pattern**. It is used to decouple abstraction from implementation. For example, I am separating platform-specific code from core logic. Check the [implementation in C#](src/Bridge).
+Another **interesting design patterns from this group** are:
+
+- **Bridge pattern**. It is used to decouple abstraction from implementation. For example, I am separating platform-specific code from core logic. Check the [implementation in C#](src/Bridge).
+
+- **Facade pattern**. It provides a simplified interface to a complexy subsytem.  Check the [implementation in C#](src/Facade).
 
 ## Behavioral Design Patterns
 
@@ -192,6 +210,8 @@ Other exciting design patterns from this group are:
 
 **Real-world example**: Let’s plan a travel from city A to city B. You can choose a "transportation strategy" based on your needs: take a fast train (speed focus), a comfortable bus (comfort focus), or a budget-friendly carpool (low-cost focus). 
 
+**UML diagram of Strategy pattern:**
+
 ![Strategy](assets/Strategy.png)
 
 **[An implementation of the Strategy pattern in C#.](src/Strategy)**
@@ -201,6 +221,8 @@ Other exciting design patterns from this group are:
 **Usage**: Maintain a consistent state by being notified of changes and, for example, notifying subscribers of events in a messaging system.
 
 **Real-world example**: We can think of a breaking news app. Users subscribe to specific topics (sports, politics, etc.), acting as "observers." When news breaks in a subscribed topic, the "observer pattern" notifies all relevant users with personalized alerts. Sports fans get their scores, and political enthusiasts receive election updates without them needing to check actively. 
+
+**UML diagram of Observer pattern:**
 
 ![Observer](assets/Observer.png)
 
@@ -212,6 +234,8 @@ Other exciting design patterns from this group are:
 
 **Real-world example**: Picture ordering food at a restaurant. You tell the waiter your wishes (pizza, extra cheese), creating an "order command." The waiter then acts as a messenger, carrying your "command" to the Chef in the kitchen (receiver). The Chef, receiving the "command," makes your pizza precisely as specified. This separation of ordering (command) from making (execution) lets you change or cancel easily.
 
+**UML diagram of Command pattern:**
+
 ![Command](assets/Command.png)
 
 **[An implementation of the Command pattern in C#.](src/Command)**
@@ -222,6 +246,8 @@ Other exciting design patterns from this group are:
 
 **Real-world example**: The smartphone effortlessly transitions between states (on, off, silent, airplane mode) based on your actions. Each state (the "concrete state") has unique behavior: on allows calls and notifications, silent mutes them, and airplane mode blocks signals. The phone (the "context") doesn't manage these behaviors directly; it delegates to the current state object. When you press a button or toggle a setting, the phone transitions to a new state, seamlessly changing its behavior without requiring intricate logic. 
 
+**UML diagram of State pattern:**
+
 ![State](assets/State.png)
 
 **[An implementation of the State pattern in C#.](src/State)**
@@ -231,6 +257,8 @@ Other exciting design patterns from this group are:
 **Usage**: Define the skeleton of an algorithm in operation, deferring some steps to subclasses and implementing a base class for unit testing with customizable setup and teardown steps.
 
 **Real-world example**: Let’s say we have a factory where every car (subclasses like Sedan, SUV, and Truck) follows the same basic steps: weld the frame, add the engine, install electrical components, and paint. This is the overall structure defined by the template method. However, each car type has specific variations: Sedans have smaller frames and engines, SUVs have higher clearance and different interiors, and trucks have reinforced frames and more significant engines. The template method ensures a smooth, organized process, allowing each car type to have unique characteristics through specific implementations within the overall flow.
+
+**UML diagram of Template Method pattern:**
 
 ![Template Method](assets/TemplateMethod.png)
 
