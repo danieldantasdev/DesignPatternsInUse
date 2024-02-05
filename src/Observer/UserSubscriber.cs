@@ -7,7 +7,7 @@
         _name = name;
     }
 
-    public void Update(string message)
+    public void Update(string? message)
     {
         Console.WriteLine($"{_name} received message: {message}");
     }

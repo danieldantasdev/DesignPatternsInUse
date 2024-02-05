@@ -1,4 +1,4 @@
 ﻿public interface IObserver
 {
-    void Update(string message);
+    void Update(string? message);
 }

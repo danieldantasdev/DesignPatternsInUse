@@ -1,7 +1,7 @@
 ﻿public class MessagePublisher : IMessagePublisher
 {
     private List<IObserver> _observers = new List<IObserver>();
-    private string _latestMessage;
+    private string? _latestMessage;
 
     public void Subscribe(IObserver observer)
     {

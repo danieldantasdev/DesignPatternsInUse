@@ -39,7 +39,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "Prototype\Prot
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge", "Bridge\Bridge.csproj", "{96EDCEDC-8C6D-438E-8E69-7DD8C03D3D5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{02577667-C912-453E-B3D0-F20D5ADF9250}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{02577667-C912-453E-B3D0-F20D5ADF9250}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
