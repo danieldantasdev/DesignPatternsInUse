@@ -282,6 +282,8 @@ Here is the summary of the pattern selection:
 
 ![Design Patterns Cheat Sheet](assets/DesignPatternsCheatSheet.png)
 
+Download [PDF version](assets/DesignPatternsCheatSheet.pdf).
+
 ## Resources to learn more
 
 Here are some more resources if you want to dig deeper into the world of design patterns, you can check the following resources:
