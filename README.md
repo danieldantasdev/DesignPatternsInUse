@@ -337,6 +337,8 @@ Here are some more resources if you want to dig deeper into the world of design 
 
 - **[Source Making](https://sourcemaking.com/design-patterns-and-tips)** website.
 
+- **[Design Patterns Quick Reference](http://www.mcdonaldland.info/2007/11/28/40/)**.
+
 ## Wrap Up
 
 If you think the repository can be improved, please open a PR with any updates and submit any issues. Also, I will continue to improve this, so you should star this repository, too.
