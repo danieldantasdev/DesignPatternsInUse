@@ -1,4 +1,7 @@
 <h1 align="center">Design Patterns in use</h1>
+<p align="center">
+ Most common Design Patterns you need to know with examples in C#.
+</p>
 
 ## What are Design Patterns?
 
@@ -96,7 +99,7 @@ Yet, understanding design patterns keeps you from reinventing wheels.
 
 In the rest of the article, we will go through all the important Design Patterns. During many years of using these patterns, I noticed that some are used often, some rarely, and some are not. Here, I will present only those patterns you need daily. 
 
-Every pattern has an **[implementation in C# language](src)**. 
+Every pattern has an **[implementation in C# language](src)**. The solution can be run using `.NET 8`.
 
 ![Implementation in C#](assets/Solution.png)
 
@@ -301,6 +304,8 @@ Choosing the correct design pattern in software engineering is critical to pract
 To select a pattern, we must first go through the problem identification, as shown in the image below.
 
 ![Select Pattern](assets/SelectPattern.png)
+
+Download [PDF version](assets/WhenToSelectDesignPattern.pdf).
 
 Here is the summary of the pattern selection:
 
