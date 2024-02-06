@@ -34,7 +34,7 @@ Design patterns can be separated into three main categories:
 
 * **Structural Patterns** - Object assembly
 
-    - **Adapter Pattern** (also known as Wrapper): Allows incompatible interfaces to work together. It acts as a bridge between two incompatible interfaces, enabling them to communicate without changing their existing code. This pattern is perfect when you need to integrate new features or libraries without disrupting existing code.
+    - **Adapter Pattern**: Allows incompatible interfaces to work together. It acts as a bridge between two incompatible interfaces, enabling them to communicate without changing their existing code. This pattern is perfect when you need to integrate new features or libraries without disrupting existing code.
 
     - **Composite Pattern**: Enables you to treat individual objects and compositions of objects uniformly. It's ideal for representing part-whole hierarchies where you want to ignore the difference between compositions of objects and individual objects.
 
@@ -54,7 +54,7 @@ Design patterns can be separated into three main categories:
 
     - **Observer Pattern**: Defines a dependency between objects so that when one object changes its state, all its dependents are notified and updated automatically. It's ideal for implementing distributed event handling systems, where the act of changing one object's state needs to be reflected in another.
 
-    - **Command Pattern**: Turns a request into a stand-alone object that contains all information about the request. This transformation allows you to parameterize methods with different requests, delay or queue a request's execution, and support undoable operations. It's particularly useful for operations that must be executed in a variety of different scenarios.
+    - **Command Pattern**: Turns a request into a stand-alone object that contains all information about the request. This transformation allows you to parameterize methods with different requests, delay or queue a request's execution, and support undoable operations.
 
     - **Iterator Pattern**: Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation. This pattern is useful for collections of objects to provide a standard way to traverse them and potentially access a selection of elements without exposing the internal structure.
 
