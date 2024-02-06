@@ -77,6 +77,8 @@ Design patterns can be separated into three main categories:
 
 ![Types of Design Patterns](assets/DesignPatterns.png)
 
+> These Design patterns are not the only kind of design patterns we have. To learn more about other types of design patterns, [check here](https://newsletter.techworld-with-milan.com/i/125894632/architecture-styles-patterns-and-design-patterns).
+
 ## Don’t fall into the Design Patterns trap
 
 You should be warned that you will probably fall into **the Design Patterns trap** when you first learn design patterns. This means you will try to squeeze a pattern in every solution, and your codebase will become over-engineering and unusable very soon.
@@ -310,8 +312,6 @@ Download [PDF version](assets/WhenToSelectDesignPattern.pdf).
 Here is the summary of the pattern selection:
 
 ![Select Pattern Summary](assets/SelectPatternSummary.png)
-
-> Design patterns are not the only kind of patterns we have. To learn more about other types of patterns, [check here](https://newsletter.techworld-with-milan.com/i/125894632/architecture-styles-patterns-and-design-patterns).
 
 ## BONUS: Design Patterns Cheat Sheet
 
