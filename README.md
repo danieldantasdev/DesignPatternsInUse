@@ -3,6 +3,8 @@
  Most common Design Patterns you need to know with examples in C#.
 </p>
 
+![Design Patterns In Use](assets/Design-Patterns-in-Use.png)
+
 ## What are Design Patterns?
 
 The concept of design patterns in software engineering was popularized in the early 1990s by the famous book **["Design Patterns: Elements of Reusable Object-Oriented Software"](https://amzn.to/3SKaa9x)** by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides, collectively known as the "Gang of Four" (GoF). However, the roots of design patterns go back further, drawing inspiration from the field of architecture.
