@@ -88,6 +88,8 @@ In the latest [O'Reilly Technology Trends for 2024](https://www.oreilly.com/rada
 
 ![Patterns Managers](assets/PatternsManagers.png)
 
+But that's not all, we also saw examples of codebases that [organize their code by folder names of design patterns](https://youtu.be/P7CfWtR-ECk?t=408). It cannot be more wrong than this!
+
 Yet, understanding design patterns keeps you from reinventing wheels.
 
 ---
