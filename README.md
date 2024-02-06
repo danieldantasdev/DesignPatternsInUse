@@ -110,7 +110,7 @@ Every pattern has an **[implementation in C# language](src)**.
 
 **Real-world example**: Only one CEO leads the company, making decisions and representing the entire organization, like a singleton providing global access and control.
 
-**Remark about usage**: The Singleton pattern is regarded as **an anti-pattern**; hence, using them excessively is advised. Why? Using it, we tend to make procedural code with global variables.
+**The remark about usage**: The Singleton pattern is regarded as **an anti-pattern**; hence, using them excessively is advised. Why? Using it, we tend to make procedural code with global variables.
 
 **UML diagram of Singleton pattern:**
 
@@ -126,6 +126,8 @@ Every pattern has an **[implementation in C# language](src)**.
 
 **Real-world example**: Think of a pizza joint with a "Pizza Factory" instead of chefs. Customers order "cheese" or "pepperoni," not knowing how it's made. Based on the order, this factory tells specialized "CheesePizza" or "PepperoniPizza" builders to get cookin'. Each builder adds signature toppings, keeping the creation logic separate but the ordering process smooth.
 
+**The remark about usage**: It can lead to increased classes, potentially making the codebase more complex.
+
 **UML diagram of Factory method pattern:**
 
 ![Factory Method](assets/FactoryMethod.png)
@@ -137,6 +139,8 @@ Every pattern has an **[implementation in C# language](src)**.
 **Usage**: Constructing complex objects step by step. For example, if you need to create a complex domain object.
 
 **Real-world example**: If we hire an architect to design our dream home, we don't need to know every construction detail. We need to tell the architect our preferences (number of rooms, style, materials), and they create a blueprint with those specifications. The architect acts as the "builder pattern," guiding us through the creation process with clear steps (foundation, walls, roof), ensuring correct order, and handling complex details. You make choices (fireplace or no fireplace?), and the builder incorporates them, constructing the house piece by piece until it's complete. 
+
+**The remark about usage**: It could lead to increased complexity due to the introduction of multiple new classes.
 
 **UML diagram of Builder pattern:**
 
@@ -160,6 +164,8 @@ Other **exciting design patterns from this group** are:
 
 **Real-world example**: Allows you to use your devices in different countries by adapting to the local power outlet (adapter mediates communication between incompatible systems).
 
+**The remark about usage**: Can lead to an increase in the number of adapters, making the system more complicated. Modifying the service class to align with the rest of the codebase could be simpler sometimes.
+
 **UML diagram of Adapter pattern:**
 
 ![Adapter](assets/Adapter.png)
@@ -171,6 +177,8 @@ Other **exciting design patterns from this group** are:
 **Usage**: Represent part-whole hierarchies. For example, graphic objects in a drawing application can be grouped and treated uniformly.
 
 **Real-world example**: In the library, books are organized on shelves, but each shelf can further hold categories (fiction, history). These categories might even contain subcategories (romance, mystery). Each shelf acts as a composite, keeping both individual books (leaf nodes) and other categories (composite nodes).
+
+**The remark about usage**: Restricting operations for certain components or leaves in the hierarchy could be challenging.
 
 **UML diagram of Composite pattern:**
 
@@ -184,6 +192,8 @@ Other **exciting design patterns from this group** are:
 
 **Real-world example**: Let’s assume you’re a CEO with a personal assistant who acts as a "proxy," handling requests and shielding you from unnecessary distractions. The assistant assesses each request, prioritizing the important ones, filtering out spam, and preparing relevant info. Only the filtered essentials reach the CEO, who focuses on big decisions, while the assistant handles the rest. 
 
+**The remark about usage**: Overusing proxies can add unnecessary complexity and impact performance.
+
 **UML diagram of Proxy pattern:**
 
 ![Proxy](assets/Proxy.png)
@@ -196,17 +206,19 @@ Other **exciting design patterns from this group** are:
 
 **Real-world example**: If we want to make a coffee, we would start with plain coffee (the core object). Then, "decorate" it with cream (adds richness), sugar (sweetness), and cinnamon (extra flavor), each a "decorator" enhancing the base coffee without altering it. You can even combine them (multiple decorators) for unique creations like a creamy, sweet cinnamon latte!
 
+**The remark about usage**: Overuse of decorators can lead to a complex hierarchy of objects.
+
 **UML diagram of Decorator pattern:**
 
 ![Decorator](assets/Decorator.png)
 
 **[An implementation of the Decorator pattern in C#.](src/Decorator)**
 
-Another **interesting design patterns from this group** are:
+Other **interesting design patterns** from this group are:
 
 - **Bridge pattern**. It is used to decouple abstraction from implementation. For example, I am separating platform-specific code from core logic. Check the [implementation in C#](src/Bridge).
 
-- **Facade pattern**. It provides a simplified interface to a complexy subsytem.  Check the [implementation in C#](src/Facade).
+- **Facade pattern**. It provides a simplified interface to a complex subsystem. Check the [implementation in C#](src/Facade).
 
 ## Behavioral Design Patterns
 
@@ -217,6 +229,8 @@ Another **interesting design patterns from this group** are:
 **Usage**: Define a family of algorithms. For example, they allow users to choose different sorting or compression algorithms.
 
 **Real-world example**: Let’s plan a travel from city A to city B. You can choose a "transportation strategy" based on your needs: take a fast train (speed focus), a comfortable bus (comfort focus), or a budget-friendly carpool (low-cost focus). 
+
+**The remark about usage**: This could lead to an increased number of classes and complexity when dealing with many strategies. There is no need to add new classes and interfaces if you have only a few algorithms that change rarely.
 
 **UML diagram of Strategy pattern:**
 
@@ -230,6 +244,8 @@ Another **interesting design patterns from this group** are:
 
 **Real-world example**: We can think of a breaking news app. Users subscribe to specific topics (sports, politics, etc.), acting as "observers." When news breaks in a subscribed topic, the "observer pattern" notifies all relevant users with personalized alerts. Sports fans get their scores, and political enthusiasts receive election updates without them needing to check actively. 
 
+**The remark about usage**: This can result in performance issues when there are numerous observers or the update logic is complex. Subscribers are notified in an unpredictable sequence.
+
 **UML diagram of Observer pattern:**
 
 ![Observer](assets/Observer.png)
@@ -241,6 +257,8 @@ Another **interesting design patterns from this group** are:
 **Usage**: Encapsulate a request as an object. For example, I implement undo/redo functionality in text or image editor.
 
 **Real-world example**: Picture ordering food at a restaurant. You tell the waiter your wishes (pizza, extra cheese), creating an "order command." The waiter then acts as a messenger, carrying your "command" to the Chef in the kitchen (receiver). The Chef, receiving the "command," makes your pizza precisely as specified. This separation of ordering (command) from making (execution) lets you change or cancel easily.
+
+**The remark about usage**: It has the potential to introduce complexity, as it requires creating additional classes for each action or request, complicating the architecture for simple operations.
 
 **UML diagram of Command pattern:**
 
@@ -254,6 +272,8 @@ Another **interesting design patterns from this group** are:
 
 **Real-world example**: The smartphone effortlessly transitions between states (on, off, silent, airplane mode) based on your actions. Each state (the "concrete state") has unique behavior: on allows calls and notifications, silent mutes them, and airplane mode blocks signals. The phone (the "context") doesn't manage these behaviors directly; it delegates to the current state object. When you press a button or toggle a setting, the phone transitions to a new state, seamlessly changing its behavior without requiring intricate logic. 
 
+**The remark about usage**: It can lead to a proliferation of classes, as each state is typically represented by its class. This not only increases the complexity of the system but can also make it harder to manage and understand.
+
 **UML diagram of State pattern:**
 
 ![State](assets/State.png)
@@ -264,7 +284,9 @@ Another **interesting design patterns from this group** are:
 
 **Usage**: Define the skeleton of an algorithm in operation, deferring some steps to subclasses and implementing a base class for unit testing with customizable setup and teardown steps.
 
-**Real-world example**: Let’s say we have a factory where every car (subclasses like Sedan, SUV, and Truck) follows the same basic steps: weld the frame, add the engine, install electrical components, and paint. This is the overall structure defined by the template method. However, each car type has specific variations: Sedans have smaller frames and engines, SUVs have higher clearance and different interiors, and trucks have reinforced frames and more significant engines. The template method ensures a smooth, organized process, allowing each car type to have unique characteristics through specific implementations within the overall flow.
+**Real-world example**: Let’s say we have a factory where every car (subclasses like Sedan, SUV, and Truck) follows the same basic steps: weld the frame, add the engine, install electrical components, and paint. This is the overall structure defined by the template method. However, each car type has specific variations: Sedans have smaller frames and engines, SUVs have higher clearance and different interiors, and trucks have reinforced frames and more significant engines. 
+
+**The remark about usage**: It can lead to overly complex hierarchies when multiple algorithm variations are required.
 
 **UML diagram of Template Method pattern:**
 
