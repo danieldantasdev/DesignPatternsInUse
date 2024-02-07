@@ -227,7 +227,7 @@ Other **exciting design patterns from this group** are:
 
 **Usage**: It provides a simplified interface to a complex subsystem. 
 
-**Real-world example**: Let's say we are visiting a hotel. We need various services - ordering room service, booking spa appointments, requesting housekeeping. Instead of contacting each department individually, you simply call the front desk. The front desk acts as a facade, hiding the complexity of the underlying systems. They take your request, communicate with the relevant department (kitchen, spa, housekeeping), and deliver the service, making everything seem effortless. You don't need to know how each department works; the facade provides a simplified interface to access them all.
+**Real-world example**: Let's say we are visiting a hotel. We need various services - ordering room service, booking spa appointments, requesting housekeeping. Instead of contacting each department individually, you call the front desk. The front desk acts as a facade, hiding the complexity of the underlying systems. They take your request, communicate with the relevant department (kitchen, spa, housekeeping), and deliver the service, making everything seem effortless. You don't need to know how each department works; the facade provides a simplified interface to access them all.
 
 **The remark about usage**: Facades have the potential to transform into god objects connected to every application class.
 
