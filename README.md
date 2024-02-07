@@ -5,6 +5,8 @@
 
 ![Design Patterns In Use](assets/Design-Patterns-in-Use.png)
 
+Download the [PDF version](assets/DesignPatternsBook.pdf) of the book.
+
 ## What are Design Patterns?
 
 The concept of design patterns in software engineering was popularized in the early 1990s by the famous book **["Design Patterns: Elements of Reusable Object-Oriented Software"](https://amzn.to/3SKaa9x)** by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides, collectively known as the "Gang of Four" (GoF). However, the roots of design patterns go back further, drawing inspiration from the field of architecture.
@@ -29,9 +31,9 @@ Design patterns can be separated into three main categories:
 
     - **Singleton Pattern**: Ensures a class has only one instance and provides a global point of access to it. This is particularly useful for managing resources like database connections.
 
-    - **Factory Method Pattern**: Defines an interface for creating an object but lets subclasses alter the type of objects that will be created. It's ideal when you have a superclass with multiple subclasses and you need to create an instance of one of these subclasses based on some initialization parameters.
+    - **Factory Method Pattern**: Defines an interface for creating an object but lets subclasses alter the type of objects that will be created. It's ideal when you have a superclass with multiple subclasses, and must create an instance of one of these subclasses based on some initialization parameters.
 
-    - **Abstract Factory Pattern**: Offers an interface for creating families of related or dependent objects without specifying their concrete classes. This pattern shines when you need to ensure that the created objects can work together without necessarily knowing their exact types.
+    - **Abstract Factory Pattern**: Offers an interface for creating families of related or dependent objects without specifying their concrete classes. This pattern shines when you must ensure that the created objects can work together without knowing their exact types.
 
     - **Builder Pattern**: Separates the construction of a complex object from its representation, allowing the same construction process to create various representations. This pattern is excellent for when you need to create an object with many optional or required components.
 
@@ -39,17 +41,17 @@ Design patterns can be separated into three main categories:
 
 * **Structural Patterns** - Object assembly
 
-    - **Adapter Pattern**: Allows incompatible interfaces to work together. It acts as a bridge between two incompatible interfaces, enabling them to communicate without changing their existing code. This pattern is perfect when you need to integrate new features or libraries without disrupting existing code.
+    - **Adapter Pattern**: Allows incompatible interfaces to work together. It acts as a bridge between two incompatible interfaces, enabling them to communicate without changing their existing code. This pattern is perfect when integrating new features or libraries without disrupting existing code.
 
     - **Composite Pattern**: Enables you to treat individual objects and compositions of objects uniformly. It's ideal for representing part-whole hierarchies where you want to ignore the difference between compositions of objects and individual objects.
 
-    - **Proxy Pattern**: Provides a placeholder for another object to control access to it. This is useful for lazy loading, controlling access, or logging, acting as an intermediary between the client and the actual object to add an additional layer of processing.
+    - **Proxy Pattern**: Provides a placeholder for another object to control access to it. This is useful for lazy loading, controlling access, or logging, acting as an intermediary between the client and the actual object to add a processing layer.
 
-    - **Flyweight Pattern**: Minimizes memory use by sharing as much data as possible with similar objects; it's a boon for efficiency when working with a large number of objects that have some shared state.
+    - **Flyweight Pattern**: Minimizes memory use by sharing as much data as possible with similar objects; it's a boon for efficiency when working with many objects with some shared state.
 
-    - **Facade Pattern**: Offers a simplified interface to a complex system of classes, library, or framework. By providing a higher-level interface, it makes the subsystem easier to use, reducing complexity and promoting decoupling.
+    - **Facade Pattern**: Offers a simplified interface to a complex system of classes, library, or framework. Providing a higher-level interface makes the subsystem easier to use, reducing complexity and promoting decoupling.
 
-    - **Bridge Pattern**: Decouples an abstraction from its implementation so that the two can vary independently. It's particularly useful when you need to extend a class in several orthogonal (independent) dimensions.
+    - **Bridge Pattern**: Decouples an abstraction from its implementation so that the two can vary independently. It's particularly useful when extending a class in several orthogonal (independent) dimensions.
 
     - **Decorator Pattern**: Allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. This pattern provides a flexible alternative to subclassing for extending functionality.
 
@@ -57,25 +59,25 @@ Design patterns can be separated into three main categories:
 
     - **Strategy Pattern**: Allows you to define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it. This pattern is perfect when you have multiple ways to accomplish a task, and you want to select the method at runtime.
 
-    - **Observer Pattern**: Defines a dependency between objects so that when one object changes its state, all its dependents are notified and updated automatically. It's ideal for implementing distributed event handling systems, where the act of changing one object's state needs to be reflected in another.
+    - **Observer Pattern**: Defines a dependency between objects so that when one object changes its state, all its dependents are notified and updated automatically. It's ideal for implementing distributed event handling systems, where changing one object's state needs to be reflected in another.
 
-    - **Command Pattern**: Turns a request into a stand-alone object that contains all information about the request. This transformation allows you to parameterize methods with different requests, delay or queue a request's execution, and support undoable operations.
+    - **Command Pattern**: Turns a request into a stand-alone object containing all the request information. This transformation allows you to parameterize methods with different requests, delay or queue a request's execution, and support undoable operations.
 
     - **Iterator Pattern**: Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation. This pattern is useful for collections of objects to provide a standard way to traverse them and potentially access a selection of elements without exposing the internal structure.
 
-    - **State Pattern**: Allows an object to alter its behavior when its internal state changes. The object will appear to change its class. This is beneficial when an object's behavior depends on its state, and it must be able to change its behavior at runtime depending on that state.
+    - **State Pattern**: An object can alter its behavior when its internal state changes. The object will appear to change its class. This is beneficial when an object's behavior depends on its state and must be able to change its behavior at runtime depending on that state.
 
-    - **Memento Pattern**: Without violating encapsulation, capture and externalize an object's internal state so that the object can be returned to this state later. This pattern is useful for implementing undo mechanisms or for saving and restoring the state of an object.
+    - **Memento Pattern**: Without violating encapsulation, capture and externalize an object's internal state so that the object can be returned to this state later. This pattern is useful for implementing undo mechanisms or saving and restoring an object's state.
 
-    - **Mediator Pattern**: Reduces chaos between interacting classes by encapsulating the way disparate sets of objects interact and communicate with each other. By doing so, it helps to prevent the "spaghetti code" scenario where multiple classes communicate directly and in a complex way.
+    - **Mediator Pattern**: Reduces chaos between interacting classes by encapsulating how disparate sets of objects interact and communicate. Doing so helps prevent the "spaghetti code" scenario where multiple classes communicate directly and in a complex way.
 
-    - **Chain of Responsibility Pattern**: Passes the request along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain. It's particularly useful for processing multiple types of requests in a decentralized manner.
+    - **Chain of Responsibility Pattern**: Passes the request along a chain of handlers. Upon receiving a request, each handler decides to process the request or pass it to the next handler in the chain. It's particularly useful for processing multiple requests in a decentralized manner.
 
-    - **Visitor Pattern**: Lets you define a new operation without changing the classes of the elements on which it operates. Ideal for scenarios where you need to perform operations across a group of objects with different classes.
+    - **Visitor Pattern**: Let you define a new operation without changing the classes of the elements on which it operates. Ideal for scenarios where you need to perform operations across a group of objects with different classes.
 
-    - **Interpreter Pattern**: Provides a way to evaluate language grammar or expression. This is useful in the development of tools and compilers for new programming languages or scripting languages.
+    - **Interpreter Pattern**: Provides a way to evaluate language grammar or expression. This is useful in developing tools and compilers for new programming or scripting languages.
 
-    - **Template Method Pattern**: Defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure. It's beneficial when there's a multi-step process requiring flexibility while maintaining the overall structure.
+    - **Template Method Pattern**: Defines the skeleton of an algorithm in the superclass but lets subclasses override specific algorithm steps without changing its structure. It's beneficial when a multi-step process requires flexibility while maintaining the overall structure.
 
 ![Types of Design Patterns](assets/DesignPatterns.png)
 
@@ -91,7 +93,7 @@ But we want to make our codebase as simple as possible, so Design patterns are n
 
 Image credits (@flaviocopes on Twitter)
 
-In the latest [O'Reilly Technology Trends for 2024](https://www.oreilly.com/radar/technology-trends-for-2024/) we something more even more problematic. Managers are asking developers how many patterns they used. This is an open door to over-engineering.
+We find something even more problematic in the latest [O'Reilly Technology Trends for 2024](https://www.oreilly.com/radar/technology-trends-for-2024/). Managers are asking developers how many patterns they used. This is an open door to over-engineering.
 
 ![Patterns Managers](assets/PatternsManagers.png)
 
@@ -219,13 +221,22 @@ Other **exciting design patterns from this group** are:
 
 ![Decorator](assets/Decorator.png)
 
-**[An implementation of the Decorator pattern in C#.](src/Decorator)**
+**[An implementation of the Decorator pattern in C#.](src/Decpratpr)**
 
-Other **interesting design patterns** from this group are:
+### Facade pattern
 
-- **Bridge pattern**. It is used to decouple abstraction from implementation. For example, I am separating platform-specific code from core logic. Check the [implementation in C#](src/Bridge).
+**Usage**: It provides a simplified interface to a complex subsystem. 
 
-- **Facade pattern**. It provides a simplified interface to a complex subsystem. Check the [implementation in C#](src/Facade).
+**Real-world example**: Let's say we are visiting a hotel. We need various services - ordering room service, booking spa appointments, requesting housekeeping. Instead of contacting each department individually, you simply call the front desk. The front desk acts as a facade, hiding the complexity of the underlying systems. They take your request, communicate with the relevant department (kitchen, spa, housekeeping), and deliver the service, making everything seem effortless. You don't need to know how each department works; the facade provides a simplified interface to access them all.
+
+**The remark about usage**: Facades have the potential to transform into god objects connected to every application class.
+
+![Facade](assets/Facade.png)
+
+**[An implementation of the Facade pattern in C#.](src/Facade)**
+
+Another interesting design pattern from this group is the **Bridge pattern**. It is used to decouple abstraction from implementation. For example, I am separating platform-specific code from core logic. Check the [implementation in C#](src/Bridge).
+
 
 ## Behavioral Design Patterns
 
