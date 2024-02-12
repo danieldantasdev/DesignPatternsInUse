@@ -94,7 +94,7 @@ But we want to make our codebase as simple as possible, so Design patterns are n
 
 ![Design Patterns Trap](assets/DesignPatternsTrap.jpg)
 
-Image credits (@flaviocopes on Twitter)
+Image credits: [flavio](https://twitter.com/flaviocopes/status/1417007331930423298)
 
 We find something even more problematic in the latest [O'Reilly Technology Trends for 2024](https://www.oreilly.com/radar/technology-trends-for-2024/). Managers are asking developers how many patterns they used. This is an open door to over-engineering.
 
