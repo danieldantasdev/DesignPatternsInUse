@@ -3,7 +3,7 @@
  Most common Design Patterns you need to know with examples in C#.
 </p>
 
-![Design Patterns In Use](assets/Design-Patterns-in-Use.png)
+![Design Patterns In Use](assets/Design-Patterns-in-Use.png){ width="600" height="690" style="display: block; margin: 0 auto" }
 
 Download the [PDF version](assets/DesignPatternsBook.pdf) of the book.
 
