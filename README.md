@@ -8,7 +8,7 @@
 <p>
 
 
-Download the [PDF version](assets/DesignPatternsBook.pdf) of the book.
+Download the [PDF version](assets/DesignPatternsInUseEbook.pdf) of the book.
 
 ## What are Design Patterns?
 
