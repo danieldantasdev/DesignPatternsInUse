@@ -1,6 +1,6 @@
 <h1 align="center">Design Patterns in use</h1>
 <p align="center">
- Most common Design Patterns you need to know with examples in C#.
+The most common Design Patterns you need to know with examples in C#.
 </p>
 
 <p align="center">
